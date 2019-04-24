@@ -1,0 +1,24 @@
+p {
+ font-family : "Garamond" , serif ;
+}
+
+h2 {
+ font-size : 110%;
+ color : red;
+ background-color : white ;
+}
+
+.megjegyzes {
+ color : red;
+ background-color : yellow ;
+ font-weight : bold;
+}
+
+p#bevezetes {
+ border : 3px dashed black ;
+}
+
+a:hover {
+ color : yellow ;
+ background-color : navy;
+}

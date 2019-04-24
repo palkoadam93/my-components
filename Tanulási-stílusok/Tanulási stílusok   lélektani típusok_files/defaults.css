@@ -1,0 +1,153 @@
+
+/*
+** HTML elements
+*/
+fieldset {
+  margin-bottom: 1em;
+  padding: .5em;
+}
+form {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  height: 1px;
+  border: 1px solid gray;
+}
+img {
+  border: 0;
+}
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: left; /* LTR */
+  padding-right: 1em; /* LTR */
+  border-bottom: 3px solid #ccc;
+}
+
+/*
+** Markup free clearing
+** Details: http://www.positioniseverything.net/easyclearing.html
+*/
+.clear-block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clear-block {
+  display: inline-block;
+}
+
+/* Hides from IE-mac \*/
+* html .clear-block {
+  height: 1%;
+}
+.clear-block {
+  display: block;
+}
+/* End hide from IE-mac */
+
+
+
+/* Word wrap */
+
+div {word-wrap:break-word;}
+
+
+
+/* News */
+
+.news_list {
+  
+}
+
+.news_block {
+  
+}
+
+.news_item {
+  padding: 5px;
+  margin: 10px;
+  background: url(/sites/default/files/images/news/item.gif);
+  border-radius: 25px;
+  -moz-border-radius:2 5px; /* Firefox */
+  background-size: 100% 100%;
+  -moz-background-size: 100% 100%; /* Firefox */
+  box-shadow: 5px 5px 5px #888888;
+  -moz-box-shadow: 5px 5px 5px #888888; /* Firefox */
+  -webkit-box-shadow: 5px 5px 5px #888888; /* Safari and Chrome */
+}
+
+.news_header {
+  margin:5px;
+}
+
+.news_body {
+  margin:10px;
+}
+
+.news_created {
+  color:#005a8c;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.news_title {
+  font-weight: bold;
+}
+
+.news_created,
+.news_title,
+.news_body {
+  font-size:10px;
+}
+
+.news_body a,
+.news_body p a {
+  text-decoration: none;
+}
+
+
+
+/* Guestbook */
+
+.guestbook-entry {
+  margin: 20px 15px;
+  padding: 10px;
+  border: 1px solid rgb(215,215,215);
+  border-radius: 5px;
+  -moz-border-radius: 5px; /* Firefox */
+}
+
+.guestbook-entry.odd {
+/*  background-color: rgb(240,240,240);*/
+ background: url(/sites/default/files/images/news/item.gif);
+ background-size: 100% 100%;
+ -moz-background-size: 100% 100%; /* Firefox */
+}
+
+.guestbook-entry.even {
+/*  background-color: rgb(237,245,250); */
+background: url(/sites/default/files/images/news/item.gif);
+ background-size: 100% 100%;
+ -moz-background-size: 100% 100%; /* Firefox */
+}
+
+
+/* egyeb */
+
+img#gyuru {
+  opacity: 0;
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -o-transition: opacity 1s;
+}
+
+img#gyuru:hover {
+  opacity: 1;
+}
